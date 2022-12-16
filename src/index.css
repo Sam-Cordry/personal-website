@@ -8,8 +8,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
 .navbar {
@@ -19,12 +22,45 @@ code {
   height: 60px;
 }
 
-.navbar > h3 {
+.navbar-about, .navbar-projects, .navbar-resumé, .navbar-contact {
   margin-right: 30px;
+  color: black;
 }
 
-.navbar > h2 {
+.navbar-title {
   margin-right: auto;
   margin-top: 15px;
   margin-left: 30px;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-top > h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.footer-linkedin, .footer-github {
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer-contact {
+  color: black;
 }

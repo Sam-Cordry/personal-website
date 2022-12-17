@@ -17,6 +17,7 @@ export default function Footer() {
             <NavLink to="/contact" exact className="footer-contact" rel="noreferrer">
                 <h4 className="footer-contact">Contact Me</h4>
             </NavLink>
+            {/* <h5 className="footer-darkmode">Secret Dark Mode!</h5> */}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from './pages/About';
@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
       <Navbar />
       <Routes>

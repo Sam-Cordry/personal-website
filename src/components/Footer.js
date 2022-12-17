@@ -14,7 +14,7 @@ export default function Footer() {
                     <img src={GithubLogo} className="footer-github" alt="Github Logo" />
                 </a>
             </div>
-            <NavLink to="/contact" exact className="footer-contact" rel="noreferrer">
+            <NavLink to="/contact" className="footer-contact" rel="noreferrer">
                 <h4 className="footer-contact">Contact Me</h4>
             </NavLink>
             {/* <h5 className="footer-darkmode">Secret Dark Mode!</h5> */}

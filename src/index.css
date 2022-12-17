@@ -49,6 +49,26 @@ a:link, a:visited, a:hover, a:active {
   padding-bottom: 0px;
 }
 
+.projects-main {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40%;
+  margin-left: 40%;
+}
+
+.contact-form > * {
+  margin-bottom: 10px;
+}
+
+.contact-form-message {
+  resize: vertical;
+}
+
 .footer {
   background-color: #f5f5f5;
   padding-bottom: 10px;

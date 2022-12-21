@@ -5,7 +5,7 @@ export default function Resumé() {
     return (
         <div className="resumé">
             <h1 className="resumé-title">Resumé</h1>
-            <iframe src={Cordry_Resume} title="Cordry_Resumé" width="75%" height="800px"></iframe>
+            <iframe src={Cordry_Resume} title="Cordry_Resumé" width="75%" height="800px" className="resumé-viewer"></iframe>
         </div>
     )
 }

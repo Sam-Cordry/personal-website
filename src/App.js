@@ -31,14 +31,18 @@ export default function App() {
   return (
     <div className="app">
       <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resumé />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <div className="page-content">
+        <div className="content-wrap">
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/resume" element={<Resumé />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
       </Router>
     </div>
   );

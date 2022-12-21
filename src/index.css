@@ -49,7 +49,7 @@
   src: local("Rosario-SemiBoldItalic"), url("./fonts/Rosario-SemiBoldItalic.ttf") format("truetype");
 }
 
-/* Styling of HTML and React components */
+/* Styling of whole website */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -71,17 +71,29 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
 }
 
+/* Page alignment styling */
+.page-content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 6.5rem;
+}
+
+/* Styling of Navbar */
 .navbar {
   display: flex;
   justify-content: flex-end;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   height: 60px;
+  background-color: #35185A;
 }
 
 .navbar-about, .navbar-projects, .navbar-resumé, .navbar-contact {
-  margin-right: 30px;
-  color: black;
-  font-family: "Medium";
+  margin-right: 50px;
+  color: #B19DD0;
+  font-family: "Regular";
 }
 
 .navbar-logo {
@@ -91,9 +103,10 @@ a:link, a:visited, a:hover, a:active {
   width: 100px;
 }
 
+/* Styling of "About" page */
 .about {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .about-top > h1 {
@@ -103,6 +116,18 @@ a:link, a:visited, a:hover, a:active {
   font-family: "Bold";
 }
 
+.about-main > h2 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-family: "Bold";
+}
+
+.about-main > p {
+  margin-top: 10px;
+  font-family: "Light";
+}
+
+/* Styling of "Projects" page */
 .projects-title, .projects-description {
   font-family: "Bold";
 }
@@ -113,41 +138,103 @@ a:link, a:visited, a:hover, a:active {
   font-family: "Light";
 }
 
+/* Styling of "Resumé" page */
 .resumé-title {
   font-family: "Bold";
 }
 
-.contact-title, .contact-description {
+.resumé-viewer {
+  margin-bottom: 30px;
+}
+
+/* Styling of "Contact" page */
+.contact-title, .contact-talk, .contact-message {
   font-family: "Bold";
 }
 
-.contact-info {
+.contact-info, .contact-details {
   font-family: "Light";
+}
+
+.contact-info > a {
+  color: black;
+}
+
+.contact-main {
+  display: flex;
+}
+
+.contact-left {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.contact-right {
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+.contact-required {
+  font-family: "SemiBoldItalic";
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin-right: 40%;
-  margin-left: 40%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .contact-form > * {
   margin-bottom: 10px;
 }
 
-.contact-form > label, .contact-form > input {
+.contact-form > label, .contact-form > input, .contact-form > textarea {
   font-family: "Light";
 }
 
-.contact-form-message {
+.contact-form > label {
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.contact-form-message > textarea {
   resize: vertical;
 }
 
+.red {
+  color: red;
+}
+
+.contact-form-submit {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-status-success {
+  color: green;
+  margin-top: 10px;
+  font-family: "Light";
+}
+
+.contact-form-status-error {
+  color: red;
+  margin-top: 10px;
+  font-family: "Regular";
+}
+
+/* Styling of Footer */
 .footer {
-  background-color: #f5f5f5;
+  background-color: #F5F5F5;
+  padding-top: 5px;
   padding-bottom: 10px;
   margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.5rem;
 }
 
 .footer-logos {
@@ -161,10 +248,15 @@ a:link, a:visited, a:hover, a:active {
   width: 40px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-contact {
   color: black;
   margin-bottom: 0px;
-  font-family: "Medium";
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-family: "Light";
 }

@@ -12,22 +12,20 @@ export default function ContactForm() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        // emailjs.sendForm('service_3dwou2l', 'template_ugo5p4b', form.current, '_LjK2QS9TkwGrv1cX')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         setStatus("Message Sent!");
-        //         setStatusClass("contact-form-status-success");
-        //     }, (error) => {
-        //         console.log(error.text);
-        //         setStatus("Something went wrong. Please try again later.");
-        //         setStatusClass("contact-form-status-error");
-        //     });
+        emailjs.sendForm('service_3dwou2l', 'template_ugo5p4b', form.current, '_LjK2QS9TkwGrv1cX')
+            .then((result) => {
+                console.log(result.text);
+                setStatus("Message sent! I look forward to reading it!");
+                setStatusClass("contact-form-status-success");
+            }, (error) => {
+                console.log(error.text);
+                setStatus("Something went wrong. Please try again later.");
+                setStatusClass("contact-form-status-error");
+            });
 
         setName("");
         setEmail("");
         setMessage("");
-        setStatus("Message sent! I look forward to reading it!");
-        setStatusClass("contact-form-status-success");
     };
 
     const handleNameChange = (e) => {

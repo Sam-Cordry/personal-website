@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="footer">
             <div className="footer-logos">
                 <a href="https://www.linkedin.com/in/sam-cordry" target="_blank" rel="noreferrer">
-                    <img src={LinkedinLogo} className="footer-linkedin" alt="Linkedin Logo" />
+                    <img src={LinkedinLogo} className="footer-linkedin" alt="Linkedin Logo" width="40" />
                 </a>
                 <a href="https://www.github.com/Sam-Cordry" target="_blank" rel="noreferrer">
-                    <img src={GithubLogo} className="footer-github" alt="Github Logo" />
+                    <img src={GithubLogo} className="footer-github" alt="Github Logo" width="40" />
                 </a>
             </div>
             <NavLink to="/contact" className="footer-contact" rel="noreferrer">

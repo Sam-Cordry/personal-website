@@ -85,58 +85,60 @@ a:link, a:visited, a:hover, a:active {
 .navbar {
   display: flex;
   justify-content: flex-end;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  height: 60px;
+  height: 10%;
   background-color: #35185A;
 }
 
 .navbar-about, .navbar-projects, .navbar-resumé, .navbar-contact {
-  margin-right: 50px;
+  margin-right: 3.75%;
   color: #B19DD0;
-  font-family: "Regular";
+  font-family: "Light";
 }
 
 .navbar-logo {
   margin-right: auto;
-  margin-top: 15px;
-  margin-left: 20px;
-  width: 100px;
+  margin-top: 1%;
+  margin-left: 1.5%;
+  width: 5%;
 }
 
 /* Styling of "About" page */
-.about {
-  margin-top: 25px;
-  margin-bottom: 25px;
+.about-top {
+  padding-top: 1.5%;
 }
 
 .about-top > h1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-family: "Bold";
 }
 
 .about-main > h2 {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-family: "Bold";
 }
 
 .about-main > p {
-  margin-top: 10px;
+  margin-top: 1%;
   font-family: "Light";
 }
 
 /* Styling of "Projects" page */
 .projects-title, .projects-description {
   font-family: "Bold";
+  background-color: #B19DD0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .projects-main {
   text-align: left;
   padding-left: 10%;
   font-family: "Light";
-  border-top: 1px solid black;
 }
 
 .projects-main > div > ul > li > a {
@@ -149,7 +151,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .resumé-viewer {
-  margin-bottom: 30px;
+  margin-bottom: 3%;
 }
 
 /* Styling of "Contact" page */
@@ -179,8 +181,14 @@ a:link, a:visited, a:hover, a:active {
   padding-right: 15%;
 }
 
+.contact-message {
+  margin-bottom: 5%;
+}
+
 .contact-required {
   font-family: "SemiBoldItalic";
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .contact-form {
@@ -190,18 +198,14 @@ a:link, a:visited, a:hover, a:active {
   margin-left: auto;
 }
 
-.contact-form > * {
-  margin-bottom: 10px;
-}
-
 .contact-form > label, .contact-form > input, .contact-form > textarea {
   font-family: "Light";
 }
 
 .contact-form > label {
   margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 2px;
+  margin-top: 4%;
+  margin-bottom: .5%;
 }
 
 .contact-form-message > textarea {
@@ -213,56 +217,60 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .contact-form-submit {
-  width: 50px;
+  width: 15%;
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contact-form-status-success {
   color: green;
-  margin-top: 10px;
-  font-family: "Light";
+  margin-top: 5%;
+  font-family: "Regular";
 }
 
 .contact-form-status-error {
   color: red;
-  margin-top: 10px;
+  margin-top: 5%;
   font-family: "Regular";
 }
 
 /* Styling of Footer */
 .footer {
   background-color: #F5F5F5;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin-top: 20px;
+  padding-top: 1%;
+  padding-bottom: 0.3%;
+  margin-top: 3%;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 6rem;
 }
 
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  height: 35px;
+.footer-linkedin {
+  display: inline-block;
+  padding-right: 1%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
-.footer-linkedin, .footer-github {
-  width: 40px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+.footer-github {
+  display: inline-block;
+  margin-left: 1%;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer-contact {
   color: black;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   font-family: "Light";
 }

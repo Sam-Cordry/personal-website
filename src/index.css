@@ -104,7 +104,7 @@ a:link, a:visited, a:hover, a:active {
 
 /* Styling of "About" page */
 .about-top {
-  padding-top: 1.5%;
+  padding-top: 2%;
 }
 
 .about-top > h1 {
@@ -114,25 +114,36 @@ a:link, a:visited, a:hover, a:active {
   font-family: "Bold";
 }
 
-.about-main > h2 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-family: "Bold";
+.about-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
 }
 
-.about-main > p {
-  margin-top: 1%;
+.about-profile {
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 15%;
+}
+
+.about-paragraph {
+  width: 35%;
   font-family: "Light";
+  margin-right: 10%;
 }
 
 /* Styling of "Projects" page */
 .projects-title, .projects-description {
   font-family: "Bold";
-  background-color: #B19DD0;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+.projects-description {
+  padding-bottom: 0.5%;
 }
 
 .projects-main {

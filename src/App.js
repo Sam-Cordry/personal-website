@@ -28,21 +28,22 @@ import "./fonts/Rosario-SemiBold.ttf";
 import "./fonts/Rosario-SemiBoldItalic.ttf";
 
 export default function App() {
+  console.log(`process.env.PUBLIC_URL: ${process.env.PUBLIC_URL}`);
   return (
     <div className="app">
       <Router>
-      <div className="page-content">
-        <div className="content-wrap">
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/resume" element={<Resumé />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+        <div className="page-content">
+          <div className="content-wrap">
+            <Navbar />
+            <Routes>
+              <Route exact path={`${process.env.PUBLIC_URL}/`} element={<About />} />
+              <Route path={`${process.env.PUBLIC_URL}/projects`} element={<Projects />} />
+              <Route path={`${process.env.PUBLIC_URL}/resume`} element={<Resumé />} />
+              <Route path={`${process.env.PUBLIC_URL}/contact`} element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
       </Router>
     </div>
   );

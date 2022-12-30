@@ -2,6 +2,7 @@ import React from "react";
 import ProfilePicture from "../images/Profile-Picture.jpg";
 
 export default function About() {
+    console.log("About component loaded")
     return (
         <div className="about">
             <div className="about-top">
@@ -18,6 +19,7 @@ export default function About() {
                     for the last 8 years. Feel free to look around the website and contact me if you want to chat!
                 </p>
             </div>
+            {console.log(process.env.PUBLIC_URL)}
         </div>
     )
 }

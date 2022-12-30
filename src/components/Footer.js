@@ -14,7 +14,7 @@ export default function Footer() {
                     <img src={GithubLogo} className="footer-github" alt="Github Logo" width="40" />
                 </a>
             </div>
-            <NavLink to="/contact" className="footer-contact" rel="noreferrer">
+            <NavLink to={`/contact`} className="footer-contact" rel="noreferrer">
                 <h4>Contact Me</h4>
             </NavLink>
         </div>

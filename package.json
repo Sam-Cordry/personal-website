@@ -1,6 +1,6 @@
 {
   "name": "personal_website",
-  "version": "1.1",
+  "version": "1.2",
   "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

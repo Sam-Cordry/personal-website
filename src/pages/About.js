@@ -2,7 +2,6 @@ import React from "react";
 import ProfilePicture from "../images/Profile-Picture.jpg";
 
 export default function About() {
-    console.log("About component loaded")
     return (
         <div className="about">
             <div className="about-top">

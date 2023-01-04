@@ -28,7 +28,6 @@ import "./fonts/Rosario-SemiBold.ttf";
 import "./fonts/Rosario-SemiBoldItalic.ttf";
 
 export default function App() {
-  console.log(`process.env.PUBLIC_URL: ${process.env.PUBLIC_URL}`);
   return (
     <div className="app">
       <Router>

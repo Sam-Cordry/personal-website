@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div className="footer">
             <div className="footer-logos">
-                <a href="https://www.linkedin.com/in/sam-cordry" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/samcordry" target="_blank" rel="noreferrer">
                     <img src={LinkedinLogo} className="footer-linkedin" alt="Linkedin Logo" width="40" />
                 </a>
                 <a href="https://www.github.com/Sam-Cordry" target="_blank" rel="noreferrer">

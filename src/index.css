@@ -219,7 +219,7 @@ a:link, a:visited, a:hover, a:active {
   margin-bottom: .5%;
 }
 
-.contact-form-message > textarea {
+.contact-form-message-field {
   resize: vertical;
 }
 

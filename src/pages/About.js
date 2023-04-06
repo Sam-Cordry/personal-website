@@ -1,7 +1,9 @@
 import React from "react";
 import ProfilePicture from "../images/Profile-Picture.jpg";
+import useMobile from "../Hooks";
 
 export default function About() {
+    const isMobile = useMobile();
     return (
         <div className="about">
             <div className="about-top">
